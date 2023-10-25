@@ -1,5 +1,5 @@
-# This Repository Consists of System-Verilog Verification for basic designs
-## Counter Testbench
+# System-Verilog Verification for basic designs
+### Counter Testbench
 
 ```
 //test.sv
@@ -19,5 +19,5 @@ module test(count_inter.p2 t1);
     end
 endmodule
 ```
-## Simulation Results
+### Simulation Results
 ![counter_sim](https://github.com/Knightmare-0/System-Verilog/assets/112769624/e53debf8-7b2c-458e-90b8-9868439d9928)
