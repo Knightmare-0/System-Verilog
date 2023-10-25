@@ -20,6 +20,7 @@ module test(count_inter.p2 t1);
 endmodule
 ```
 ### Simulation Results
-![temp](https://github.com/Knightmare-0/System-Verilog/assets/112769624/554fdcc8-b05c-4fd5-ac27-90ee43190f3f)
 
+
+![temp](https://github.com/Knightmare-0/System-Verilog/assets/112769624/f6ef736e-2e41-4328-a940-1fe60ff5fcec)
 
