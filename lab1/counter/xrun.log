@@ -1,0 +1,163 @@
+xrun: 21.03-s001: (c) Copyright 1995-2021 Cadence Design Systems, Inc.
+TOOL:	xrun	21.03-s001: Started on Jun 12, 2023 at 11:12:46 IST
+xrun
+	+access+r
+	+xmcoverage+all
+	-covoverwrite
+	counter.sv
+	count_inter.sv
+	test.sv
+	top.sv
+Recompiling... reason: file './test.sv' is newer than expected.
+	expected: Mon Jun 12 11:10:49 2023
+	actual:   Mon Jun 12 11:12:42 2023
+file: test.sv
+	module worklib.test:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		top
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+
+	Extracting FSMs for coverage:
+		worklib.counter
+		worklib.test
+		worklib.top
+	Total FSMs extracted = 0
+	Building instance overlay tables: .................... Done
+	Enabling instrumentation for coverage types: block expression FSM toggle functional
+xmelab: *W,COVDCL: By default expression coverage is scored only for Verilog logical operators (|| and &&) and VHDL logical operators (OR, AND, NOR, and NAND), and is scored only in condition expressions. To score coverage for other operators and for expressions in other statements, use the "set_expr_coverable_operators" and "set_expr_coverable_statements" coverage configuration file commands with suitable options at elaboration.
+	Generating native compiled code:
+		worklib.test:sv <0x6c04e570>
+			streams:   2, words:  2055
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		             Instances  Unique
+		Modules:             3       3
+		Interfaces:          1       1
+		Registers:           3       3
+		Scalar wires:        1       -
+		Always blocks:       2       2
+		Initial blocks:      3       3
+		Pseudo assignments:  1       1
+	Writing initial simulation snapshot: worklib.top:sv
+Loading snapshot worklib.top:sv .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /cadence_tools/XCELIUM2103/tools/xcelium/files/xmsimrc
+xcelium> run
+time=                   0, clk=0, reset=0, count=xxxx
+time=                   5, clk=1, reset=0, count=xxxx
+time=                  10, clk=0, reset=1, count=0000
+time=                  15, clk=1, reset=1, count=0000
+time=                  20, clk=0, reset=0, count=0000
+time=                  25, clk=1, reset=0, count=0001
+time=                  30, clk=0, reset=0, count=0001
+time=                  35, clk=1, reset=0, count=0010
+time=                  40, clk=0, reset=0, count=0010
+time=                  45, clk=1, reset=0, count=0011
+time=                  50, clk=0, reset=0, count=0011
+time=                  55, clk=1, reset=0, count=0100
+time=                  60, clk=0, reset=0, count=0100
+time=                  65, clk=1, reset=0, count=0101
+time=                  70, clk=0, reset=0, count=0101
+time=                  75, clk=1, reset=0, count=0110
+time=                  80, clk=0, reset=0, count=0110
+time=                  85, clk=1, reset=0, count=0111
+time=                  90, clk=0, reset=0, count=0111
+time=                  95, clk=1, reset=0, count=1000
+time=                 100, clk=0, reset=0, count=1000
+time=                 105, clk=1, reset=0, count=1001
+time=                 110, clk=0, reset=0, count=1001
+time=                 115, clk=1, reset=0, count=1010
+time=                 120, clk=0, reset=0, count=1010
+time=                 125, clk=1, reset=0, count=1011
+time=                 130, clk=0, reset=0, count=1011
+time=                 135, clk=1, reset=0, count=1100
+time=                 140, clk=0, reset=0, count=1100
+time=                 145, clk=1, reset=0, count=1101
+time=                 150, clk=0, reset=0, count=1101
+time=                 155, clk=1, reset=0, count=1110
+time=                 160, clk=0, reset=0, count=1110
+time=                 165, clk=1, reset=0, count=1111
+time=                 170, clk=0, reset=0, count=1111
+time=                 175, clk=1, reset=0, count=0000
+time=                 180, clk=0, reset=0, count=0000
+time=                 185, clk=1, reset=0, count=0001
+time=                 190, clk=0, reset=0, count=0001
+time=                 195, clk=1, reset=0, count=0010
+time=                 200, clk=0, reset=0, count=0010
+time=                 205, clk=1, reset=0, count=0011
+time=                 210, clk=0, reset=0, count=0011
+time=                 215, clk=1, reset=0, count=0100
+time=                 220, clk=0, reset=0, count=0100
+time=                 225, clk=1, reset=0, count=0101
+time=                 230, clk=0, reset=0, count=0101
+time=                 235, clk=1, reset=0, count=0110
+time=                 240, clk=0, reset=0, count=0110
+time=                 245, clk=1, reset=0, count=0111
+time=                 250, clk=0, reset=0, count=0111
+time=                 255, clk=1, reset=0, count=1000
+time=                 260, clk=0, reset=0, count=1000
+time=                 265, clk=1, reset=0, count=1001
+time=                 270, clk=0, reset=0, count=1001
+time=                 275, clk=1, reset=0, count=1010
+time=                 280, clk=0, reset=0, count=1010
+time=                 285, clk=1, reset=0, count=1011
+time=                 290, clk=0, reset=0, count=1011
+time=                 295, clk=1, reset=0, count=1100
+time=                 300, clk=0, reset=0, count=1100
+time=                 305, clk=1, reset=0, count=1101
+time=                 310, clk=0, reset=0, count=1101
+time=                 315, clk=1, reset=0, count=1110
+time=                 320, clk=0, reset=0, count=1110
+time=                 325, clk=1, reset=0, count=1111
+time=                 330, clk=0, reset=0, count=1111
+time=                 335, clk=1, reset=0, count=0000
+time=                 340, clk=0, reset=0, count=0000
+time=                 345, clk=1, reset=0, count=0001
+time=                 350, clk=0, reset=0, count=0001
+time=                 355, clk=1, reset=0, count=0010
+time=                 360, clk=0, reset=0, count=0010
+time=                 365, clk=1, reset=0, count=0011
+time=                 370, clk=0, reset=0, count=0011
+time=                 375, clk=1, reset=0, count=0100
+time=                 380, clk=0, reset=0, count=0100
+time=                 385, clk=1, reset=0, count=0101
+time=                 390, clk=0, reset=0, count=0101
+time=                 395, clk=1, reset=0, count=0110
+time=                 400, clk=0, reset=0, count=0110
+time=                 405, clk=1, reset=0, count=0111
+time=                 410, clk=0, reset=0, count=0111
+time=                 415, clk=1, reset=0, count=1000
+time=                 420, clk=0, reset=0, count=1000
+time=                 425, clk=1, reset=0, count=1001
+time=                 430, clk=0, reset=0, count=1001
+time=                 435, clk=1, reset=0, count=1010
+time=                 440, clk=0, reset=0, count=1010
+time=                 445, clk=1, reset=0, count=1011
+time=                 450, clk=0, reset=0, count=1011
+time=                 455, clk=1, reset=0, count=1100
+time=                 460, clk=0, reset=0, count=1100
+time=                 465, clk=1, reset=0, count=1101
+time=                 470, clk=0, reset=0, count=1101
+time=                 475, clk=1, reset=0, count=1110
+time=                 480, clk=0, reset=0, count=1110
+time=                 485, clk=1, reset=0, count=1111
+time=                 490, clk=0, reset=0, count=1111
+time=                 495, clk=1, reset=0, count=0000
+Simulation complete via $finish(1) at time 500 NS + 0
+./test.sv:15 $finish;
+xcelium> exit
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  top(top)
+  scope    :  scope
+  testname :  test
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_5287033d_00000000.ucm
+  data               :  ./cov_work/scope/test/icc_5287033d_00000000.ucd
+TOOL:	xrun	21.03-s001: Exiting on Jun 12, 2023 at 11:12:47 IST  (total: 00:00:01)

@@ -1,0 +1,25 @@
+xrun: 21.03-s001: (c) Copyright 1995-2021 Cadence Design Systems, Inc.
+TOOL:	xrun	21.03-s001: Started on Jun 20, 2023 at 09:21:43 IST
+xrun
+	+access+r
+	+xmcoverage+all
+	-covoverwrite
+	top.sv
+Loading snapshot worklib.top:sv .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /cadence_tools/XCELIUM2103/tools/xcelium/files/xmsimrc
+xcelium> run
+Simulation complete via $finish(1) at time 500 NS + 2
+./test.sv:27   #500 $finish;	
+xcelium> exit
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  top(top)
+  scope    :  scope
+  testname :  test
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_5a232343_00000000.ucm (reused)
+  data               :  ./cov_work/scope/test/icc_5a232343_00000000.ucd
+TOOL:	xrun	21.03-s001: Exiting on Jun 20, 2023 at 09:21:44 IST  (total: 00:00:01)

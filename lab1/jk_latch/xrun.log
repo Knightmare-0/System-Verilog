@@ -1,0 +1,49 @@
+xrun: 21.03-s001: (c) Copyright 1995-2021 Cadence Design Systems, Inc.
+TOOL:	xrun	21.03-s001: Started on May 17, 2023 at 09:47:12 IST
+xrun
+	+acess+r
+	+xmcoverage+all
+	-covoverwrite
+	jk_inter.sv
+	jk_latch.sv
+	test.sv
+	top.sv
+	-sv
+
+   User defined plus("+") options:
+	+acess+r
+
+Loading snapshot worklib.top:sv .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /cadence_tools/XCELIUM2103/tools/xcelium/files/xmsimrc
+xcelium> run
+time=                   0, clk=0, reset=0, j=1, k=0, q=x, q_bar=x
+time=                   5, clk=1, reset=0, j=1, k=0, q=1, q_bar=0
+time=                  10, clk=0, reset=1, j=0, k=1, q=0, q_bar=1
+time=                  15, clk=1, reset=1, j=0, k=1, q=0, q_bar=1
+time=                  20, clk=0, reset=0, j=1, k=0, q=0, q_bar=1
+time=                  25, clk=1, reset=0, j=1, k=0, q=1, q_bar=0
+time=                  30, clk=0, reset=0, j=0, k=0, q=1, q_bar=0
+time=                  35, clk=1, reset=0, j=0, k=0, q=1, q_bar=0
+time=                  40, clk=0, reset=0, j=0, k=1, q=1, q_bar=0
+time=                  45, clk=1, reset=0, j=0, k=1, q=0, q_bar=1
+time=                  50, clk=0, reset=0, j=1, k=0, q=0, q_bar=1
+time=                  55, clk=1, reset=0, j=1, k=0, q=1, q_bar=0
+time=                  60, clk=0, reset=0, j=1, k=1, q=1, q_bar=0
+time=                  65, clk=1, reset=0, j=1, k=1, q=0, q_bar=1
+time=                  70, clk=0, reset=0, j=x, k=1, q=0, q_bar=1
+time=                  75, clk=1, reset=0, j=x, k=1, q=0, q_bar=1
+Simulation complete via $finish(1) at time 80 NS + 0
+./test.sv:23 $finish;
+xcelium> exit
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  top(top)
+  scope    :  scope
+  testname :  test
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_18474619_00000000.ucm (reused)
+  data               :  ./cov_work/scope/test/icc_18474619_00000000.ucd
+TOOL:	xrun	21.03-s001: Exiting on May 17, 2023 at 09:47:14 IST  (total: 00:00:02)

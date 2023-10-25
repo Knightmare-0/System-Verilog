@@ -1,0 +1,99 @@
+xrun: 21.03-s001: (c) Copyright 1995-2021 Cadence Design Systems, Inc.
+TOOL:	xrun	21.03-s001: Started on Jun 10, 2023 at 20:32:36 IST
+xrun
+	+access+r
+	+nccoverage+all
+	-covoverwrite
+	top.sv
+xrun: *W,OPDEPRREN: Command Line Option (+nccoverage+all) is deprecated. Use (+xmcoverage+all) instead.
+file: top.sv
+`include "driver.sv"
+                   |
+xmvlog: *W,NORECI (driver.sv,1|19): input source text recursion detected for './driver.sv' (`include source file).
+(`include file: driver.sv line 1, `include file: test.sv line 1, file: top.sv line 6)
+constraint C1{s inside{[0,1]};}
+                         |
+xmvlog: *E,EXPCOL (driver.sv,5|25): expecting a colon (':') [3.2][3.8(IEEE)].
+(`include file: driver.sv line 5, `include file: test.sv line 1, file: top.sv line 6)
+constraint C1{s inside{[0,1]};}
+                           |
+xmvlog: *E,EXPRCC (driver.sv,5|27): expecting a right brace ('}') [SystemVerilog value_range list].
+(`include file: driver.sv line 5, `include file: test.sv line 1, file: top.sv line 6)
+constraint C2{r inside{[0,1]};}
+                         |
+xmvlog: *E,EXPCOL (driver.sv,6|25): expecting a colon (':') [3.2][3.8(IEEE)].
+(`include file: driver.sv line 6, `include file: test.sv line 1, file: top.sv line 6)
+constraint C2{r inside{[0,1]};}
+                           |
+xmvlog: *E,EXPRCC (driver.sv,6|27): expecting a right brace ('}') [SystemVerilog value_range list].
+(`include file: driver.sv line 6, `include file: test.sv line 1, file: top.sv line 6)
+constraint C3{j inside{[0,1]};}
+                         |
+xmvlog: *E,EXPCOL (driver.sv,7|25): expecting a colon (':') [3.2][3.8(IEEE)].
+(`include file: driver.sv line 7, `include file: test.sv line 1, file: top.sv line 6)
+constraint C3{j inside{[0,1]};}
+                           |
+xmvlog: *E,EXPRCC (driver.sv,7|27): expecting a right brace ('}') [SystemVerilog value_range list].
+(`include file: driver.sv line 7, `include file: test.sv line 1, file: top.sv line 6)
+constraint C4{k inside{[0,1]};}
+                         |
+xmvlog: *E,EXPCOL (driver.sv,8|25): expecting a colon (':') [3.2][3.8(IEEE)].
+(`include file: driver.sv line 8, `include file: test.sv line 1, file: top.sv line 6)
+constraint C4{k inside{[0,1]};}
+                           |
+xmvlog: *E,EXPRCC (driver.sv,8|27): expecting a right brace ('}') [SystemVerilog value_range list].
+(`include file: driver.sv line 8, `include file: test.sv line 1, file: top.sv line 6)
+constraint C5{d inside{[0,1]};}
+                         |
+xmvlog: *E,EXPCOL (driver.sv,9|25): expecting a colon (':') [3.2][3.8(IEEE)].
+(`include file: driver.sv line 9, `include file: test.sv line 1, file: top.sv line 6)
+constraint C5{d inside{[0,1]};}
+                           |
+xmvlog: *E,EXPRCC (driver.sv,9|27): expecting a right brace ('}') [SystemVerilog value_range list].
+(`include file: driver.sv line 9, `include file: test.sv line 1, file: top.sv line 6)
+constraint C6{t inside{[0,1]};}
+                         |
+xmvlog: *E,EXPCOL (driver.sv,10|25): expecting a colon (':') [3.2][3.8(IEEE)].
+(`include file: driver.sv line 10, `include file: test.sv line 1, file: top.sv line 6)
+constraint C6{t inside{[0,1]};}
+                           |
+xmvlog: *E,EXPRCC (driver.sv,10|27): expecting a right brace ('}') [SystemVerilog value_range list].
+(`include file: driver.sv line 10, `include file: test.sv line 1, file: top.sv line 6)
+class driver_jk extends transactor;
+                                 |
+xmvlog: *E,SVNOTY (driver.sv,13|33): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
+(`include file: driver.sv line 13, `include file: test.sv line 1, file: top.sv line 6)
+class driver_sr extends transactor;
+                                 |
+xmvlog: *E,SVNOTY (driver.sv,28|33): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
+(`include file: driver.sv line 28, `include file: test.sv line 1, file: top.sv line 6)
+class driver_d extends transactor;
+                                |
+xmvlog: *E,SVNOTY (driver.sv,41|32): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
+(`include file: driver.sv line 41, `include file: test.sv line 1, file: top.sv line 6)
+class driver_t extends transactor;
+                                |
+xmvlog: *E,SVNOTY (driver.sv,53|32): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
+(`include file: driver.sv line 53, `include file: test.sv line 1, file: top.sv line 6)
+driver_jk djk;
+            |
+xmvlog: *E,ILLPDL (test.sv,4|12): Mixing of ansi & non-ansi style port declaration is not legal.
+(`include file: test.sv line 4, file: top.sv line 6)
+driver_sr dsr;
+            |
+xmvlog: *E,ILLPDL (test.sv,5|12): Mixing of ansi & non-ansi style port declaration is not legal.
+(`include file: test.sv line 5, file: top.sv line 6)
+driver_d dd;
+          |
+xmvlog: *E,ILLPDL (test.sv,6|10): Mixing of ansi & non-ansi style port declaration is not legal.
+(`include file: test.sv line 6, file: top.sv line 6)
+driver_t dt;
+          |
+xmvlog: *E,ILLPDL (test.sv,7|10): Mixing of ansi & non-ansi style port declaration is not legal.
+(`include file: test.sv line 7, file: top.sv line 6)
+	program worklib.test:sv
+		errors: 4, warnings: 0
+	Total errors/warnings found outside modules and primitives:
+		errors: 16, warnings: 1
+xrun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
+TOOL:	xrun	21.03-s001: Exiting on Jun 10, 2023 at 20:32:36 IST  (total: 00:00:00)

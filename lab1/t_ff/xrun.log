@@ -1,0 +1,106 @@
+xrun: 21.03-s001: (c) Copyright 1995-2021 Cadence Design Systems, Inc.
+TOOL:	xrun	21.03-s001: Started on Apr 13, 2023 at 17:15:23 IST
+xrun
+	+acess+r
+	+nccoverage+all
+	test.sv
+	t_ff.sv
+	T_inter.sv
+	top.sv
+
+   User defined plus("+") options:
+	+acess+r
+
+xrun: *W,OPDEPRREN: Command Line Option (+nccoverage+all) is deprecated. Use (+xmcoverage+all) instead.
+Recompiling... reason: file './t_ff.sv' is newer than expected.
+	expected: Thu Apr 13 16:59:17 2023
+	actual:   Thu Apr 13 17:15:17 2023
+file: t_ff.sv
+	module worklib.t_ff:sv
+		errors: 0, warnings: 0
+file: top.sv
+	module worklib.top:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		top
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+
+	Extracting FSMs for coverage:
+		worklib.t_ff
+		worklib.test
+		worklib.top
+	Total FSMs extracted = 0
+	Building instance overlay tables: .................... Done
+	Enabling instrumentation for coverage types: block expression FSM toggle functional
+xmelab: *W,COVDCL: By default expression coverage is scored only for Verilog logical operators (|| and &&) and VHDL logical operators (OR, AND, NOR, and NAND), and is scored only in condition expressions. To score coverage for other operators and for expressions in other statements, use the "set_expr_coverable_operators" and "set_expr_coverable_statements" coverage configuration file commands with suitable options at elaboration.
+	Generating native compiled code:
+		worklib.test:sv <0x1837af98>
+			streams:   1, words:  5790
+		worklib.t_ff:sv <0x1b394892>
+			streams:   4, words:  1981
+		worklib.top:sv <0x2ab202da>
+			streams:   4, words:  4598
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		             Instances  Unique
+		Modules:             3       3
+		Interfaces:          1       1
+		Registers:           5       5
+		Scalar wires:        1       -
+		Always blocks:       2       2
+		Initial blocks:      2       2
+		Pseudo assignments:  1       1
+	Writing initial simulation snapshot: worklib.top:sv
+Loading snapshot worklib.top:sv .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /cadence_tools/XCELIUM2103/tools/xcelium/files/xmsimrc
+xcelium> run
+time=                   0, clk=0, reset=0,set=0, d=0, q=x
+time=                   5, clk=1, reset=0,set=0, d=0, q=x
+time=                  10, clk=0, reset=1,set=1, d=0, q=0
+time=                  15, clk=1, reset=1,set=1, d=0, q=0
+time=                  20, clk=0, reset=0,set=1, d=0, q=0
+time=                  25, clk=1, reset=0,set=1, d=0, q=1
+time=                  30, clk=0, reset=0,set=0, d=1, q=1
+time=                  35, clk=1, reset=0,set=0, d=1, q=0
+time=                  40, clk=0, reset=0,set=0, d=0, q=0
+time=                  45, clk=1, reset=0,set=0, d=0, q=0
+time=                  50, clk=0, reset=0,set=0, d=1, q=0
+time=                  55, clk=1, reset=0,set=0, d=1, q=1
+time=                  60, clk=0, reset=0,set=0, d=0, q=1
+time=                  65, clk=1, reset=0,set=0, d=0, q=1
+time=                  70, clk=0, reset=0,set=0, d=0, q=1
+time=                  75, clk=1, reset=0,set=0, d=0, q=1
+time=                  80, clk=0, reset=0,set=0, d=0, q=1
+time=                  85, clk=1, reset=0,set=0, d=0, q=1
+time=                  90, clk=0, reset=0,set=0, d=0, q=1
+time=                  95, clk=1, reset=0,set=0, d=0, q=1
+time=                 100, clk=0, reset=0,set=0, d=0, q=1
+time=                 105, clk=1, reset=0,set=0, d=0, q=1
+time=                 110, clk=0, reset=0,set=0, d=0, q=1
+time=                 115, clk=1, reset=0,set=0, d=0, q=1
+time=                 120, clk=0, reset=0,set=0, d=0, q=1
+time=                 125, clk=1, reset=0,set=0, d=0, q=1
+time=                 130, clk=0, reset=0,set=0, d=0, q=1
+time=                 135, clk=1, reset=0,set=0, d=0, q=1
+time=                 140, clk=0, reset=0,set=0, d=0, q=1
+time=                 145, clk=1, reset=0,set=0, d=0, q=1
+time=                 150, clk=0, reset=0,set=0, d=0, q=1
+time=                 155, clk=1, reset=0,set=0, d=0, q=1
+Simulation complete via $finish(1) at time 160 NS + 0
+./test.sv:23 $finish;
+xcelium> exit
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  top(top)
+  scope    :  scope
+  testname :  test
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_2704b292_00000000.ucm
+  data               :  ./cov_work/scope/test/icc_2704b292_00000000.ucd
+TOOL:	xrun	21.03-s001: Exiting on Apr 13, 2023 at 17:15:25 IST  (total: 00:00:02)

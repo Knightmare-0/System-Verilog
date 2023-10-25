@@ -1,0 +1,14 @@
+//
+// File created by:  xrun
+// Do not modify this file
+
+s1::(05Jun2023:11:43:29):( xrun +access+r +xmcoverage+all -covoverwrite d_ff.sv D_inter.sv test.sv top.sv )
+s2::(05Jun2023:11:52:00):( xrun +access+r +xmcoverage+all -covoverwrite d_ff.sv D_inter.sv test.sv top.sv )
+s3::(05Jun2023:11:52:34):( xrun +access+r +xmcoverage+all -covoverwrite d_ff.sv D_inter.sv test.sv top.sv )
+s4::(05Jun2023:11:53:28):( xrun +access+r +xmcoverage+all -covoverwrite d_ff.sv D_inter.sv test.sv top.sv )
+s5::(05Jun2023:11:53:54):( xrun +access+r +xmcoverage+all -covoverwrite d_ff.sv D_inter.sv test.sv top.sv )
+s6::(05Jun2023:11:54:19):( xrun +access+r +xmcoverage+all -covoverwrite d_ff.sv D_inter.sv test.sv top.sv )
+s7::(05Jun2023:11:54:50):( xrun +access+r +xmcoverage+all -covoverwrite d_ff.sv D_inter.sv test.sv top.sv )
+s8::(05Jun2023:11:55:44):( xrun +access+r +xmcoverage+all -covoverwrite d_ff.sv D_inter.sv test.sv top.sv )
+s9::(05Jun2023:11:57:11):( xrun +access+r +xmcoverage+all -covoverwrite d_ff.sv D_inter.sv test.sv top.sv )
+s10::(05Jun2023:11:57:47):( xrun +access+r +xmcoverage+all -covoverwrite d_ff.sv D_inter.sv test.sv top.sv )

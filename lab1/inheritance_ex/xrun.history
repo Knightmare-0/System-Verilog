@@ -1,0 +1,13 @@
+s1(12Jun2023:22:40:01):  xrun +access+r +xmcoverage+all -covoverwrite top.sv 
+s2(12Jun2023:22:56:31):  xrun +access+r +xmcoverage+all -covoverwrite top.sv 
+s3(12Jun2023:23:00:30):  xrun +access+r +xmcoverage+all -covoverwrite top.sv 
+s4(12Jun2023:23:03:28):  xrun +access+r +xmcoverage+all -covoverwrite top.sv 
+s5(12Jun2023:23:04:05):  xrun +access+r +xmcoverage+all -covoverwrite top.sv 
+s6(12Jun2023:23:09:41):  xrun +access+r +xmcoverage+all -covoverwrite top.sv 
+s7(12Jun2023:23:13:39):  xrun +access+r +xmcoverage+all -covoverwrite top.sv 
+s8(12Jun2023:23:15:08):  xrun +access+r +xmcoverage+all -covoverwrite top.sv 
+s9(12Jun2023:23:15:38):  xrun +access+r +xmcoverage+all -covoverwrite top.sv 
+s10(12Jun2023:23:16:21):  xrun +access+r +xmcoverage+all -covoverwrite top.sv 
+s11(12Jun2023:23:16:40):  xrun +access+r +xmcoverage+all -covoverwrite top.sv 
+s12(13Jun2023:16:54:13):  xrun +access+r +xmcoverge+all -covoverwrite driver.sv ff_inter.sv ff.v test.sv top.sv 
+s13(13Jun2023:16:57:18):  xrun +access+r +xmcoverge+all -covoverwrite driver.sv ff_inter.sv ff.v test.sv top.sv 

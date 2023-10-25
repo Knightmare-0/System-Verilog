@@ -1,0 +1,10 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
++access+r
++xmcoverage+all
+SR_inter.sv
+sr_latch.sv
+test.sv
+top.sv

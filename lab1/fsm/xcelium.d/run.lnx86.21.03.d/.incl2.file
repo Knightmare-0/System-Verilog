@@ -1,0 +1,8 @@
+fsm.v
+/home/pgstudent1/Wizznoob/lab1/fsm/fsm.v
+inter_fsm.sv
+/home/pgstudent1/Wizznoob/lab1/fsm/inter_fsm.sv
+test_fsm.sv
+/home/pgstudent1/Wizznoob/lab1/fsm/test_fsm.sv
+driver_fsm.sv
+/home/pgstudent1/Wizznoob/lab1/fsm/driver_fsm.sv

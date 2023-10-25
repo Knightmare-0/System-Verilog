@@ -1,0 +1,88 @@
+xrun: 21.03-s001: (c) Copyright 1995-2021 Cadence Design Systems, Inc.
+TOOL:	xrun	21.03-s001: Started on May 16, 2023 at 20:40:58 IST
+xrun
+	+acess+r
+	+xmcoverage+all
+	-covoverwrite
+	test.sv
+	top.sv
+	usr_inter.sv
+	usr.sv
+	-sv
+
+   User defined plus("+") options:
+	+acess+r
+
+Recompiling... reason: file './test.sv' is newer than expected.
+	expected: Tue May 16 20:38:45 2023
+	actual:   Tue May 16 20:40:51 2023
+file: test.sv
+	module worklib.test:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		top
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+
+	Extracting FSMs for coverage:
+		worklib.usr
+		worklib.test
+		worklib.top
+	Total FSMs extracted = 0
+	Building instance overlay tables: .................... Done
+	Enabling instrumentation for coverage types: block expression FSM toggle functional
+xmelab: *W,COVDCL: By default expression coverage is scored only for Verilog logical operators (|| and &&) and VHDL logical operators (OR, AND, NOR, and NAND), and is scored only in condition expressions. To score coverage for other operators and for expressions in other statements, use the "set_expr_coverable_operators" and "set_expr_coverable_statements" coverage configuration file commands with suitable options at elaboration.
+	Generating native compiled code:
+		worklib.test:sv <0x3eab9e08>
+			streams:   1, words: 10582
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		             Instances  Unique
+		Modules:             3       3
+		Interfaces:          1       1
+		Registers:           8       8
+		Scalar wires:        1       -
+		Always blocks:       2       2
+		Initial blocks:      2       2
+		Pseudo assignments:  1       1
+	Writing initial simulation snapshot: worklib.top:sv
+Loading snapshot worklib.top:sv .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /cadence_tools/XCELIUM2103/tools/xcelium/files/xmsimrc
+xcelium> run
+time=                   0, clk=0, reset=0, pout = xxxx
+time=                   5, clk=1, reset=0, pout = 1010
+time=                  10, clk=0, reset=1, pout = 1010
+time=                  15, clk=1, reset=1, pout = 1010
+time=                  20, clk=0, reset=0, pout = 1010
+time=                  25, clk=1, reset=0, pout = 0101
+time=                  30, clk=0, reset=0, pout = 0101
+time=                  35, clk=1, reset=0, pout = 1011
+time=                  40, clk=0, reset=0, pout = 1011
+time=                  45, clk=1, reset=0, pout = 0110
+time=                  50, clk=0, reset=0, pout = 0110
+time=                  55, clk=1, reset=0, pout = 1101
+time=                  60, clk=0, reset=0, pout = 1101
+time=                  65, clk=1, reset=0, pout = 1110
+time=                  70, clk=0, reset=0, pout = 1110
+time=                  75, clk=1, reset=0, pout = 0111
+time=                  80, clk=0, reset=0, pout = 0111
+time=                  85, clk=1, reset=0, pout = 0011
+time=                  90, clk=0, reset=0, pout = 0011
+time=                  95, clk=1, reset=0, pout = 0000
+Simulation complete via $finish(1) at time 100 NS + 0
+./test.sv:42 $finish;
+xcelium> exit
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  top(top)
+  scope    :  scope
+  testname :  test
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_2b994256_00000000.ucm (reused)
+  data               :  ./cov_work/scope/test/icc_2b994256_00000000.ucd
+TOOL:	xrun	21.03-s001: Exiting on May 16, 2023 at 20:40:59 IST  (total: 00:00:01)

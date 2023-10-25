@@ -1,0 +1,9 @@
+s1(18May2023:16:53:03):  xrun +access+r +nccoverage+all usr.v usr_inter.sv test.sv top.sv 
+s2(22May2023:08:48:08):  xrun +access+r +mrcoverage+all -covoverwrite driver1.sv test.sv top.sv usr_inter.sv usr.v 
+s3(22May2023:09:23:48):  xrun +access+r +nccoverage+all -covoverwrite usr.v top.sv test.sv usr_inter.sv 
+s4(22May2023:09:29:27):  xrun +access+r +nccoverage+all -covoverwrite usr.v top.sv test.sv usr_inter.sv 
+s5(22May2023:09:30:03):  xrun +access+r +nccoverage+all -covoverwrite usr.v top.sv test.sv usr_inter.sv 
+s6(22May2023:10:13:06):  xrun +access+r +nccoverage+all -covoverwrite usr.v test.sv top.sv usr_inter.sv 
+s7(22May2023:10:17:21):  xrun +access+r +nccoverage+all -covoverwrite usr.v test.sv top.sv usr_inter.sv 
+s8(22May2023:10:23:41):  xrun +access+r +nccoverage+all -covoverwrite usr.v test.sv top.sv usr_inter.sv 
+s9(22May2023:10:25:07):  xrun +access+r +nccoverage+all -covoverwrite usr.v test.sv top.sv usr_inter.sv 

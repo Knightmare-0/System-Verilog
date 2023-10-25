@@ -1,0 +1,9 @@
+s1(08Jun2023:16:27:08):  xrun +access+r +xmcoverage+all top.sv 
+s2(10Jun2023:15:12:33):  xrun +access+r +nccoverage+all top.sv 
+s3(10Jun2023:15:14:20):  xrun +access+r +nccoverage+all top.sv 
+s4(10Jun2023:15:18:48):  xrun +access+r +nccoverage+all top.sv 
+s5(10Jun2023:15:22:05):  xrun +access+r +nccoverage+all top.sv 
+s6(10Jun2023:15:40:16):  xrun +access+r +nccoverage+all -covoverwrite top.sv 
+s7(10Jun2023:15:43:00):  xrun +access+r +nccoverage+all -covoverwrite top.sv 
+s8(10Jun2023:20:29:06):  xrun +access+r +nccoverage+all -covoverwrite top.sv 
+s9(10Jun2023:20:32:36):  xrun +access+r +nccoverage+all -covoverwrite top.sv 

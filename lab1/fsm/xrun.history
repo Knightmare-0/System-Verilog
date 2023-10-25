@@ -1,0 +1,6 @@
+s1(20Jun2023:08:59:29):  xrun +access+r +xmcoverage+all driver_fsm.sv fsm.v inter_fsm.sv test_fsm.sv top_fsm.sv 
+s2(20Jun2023:09:03:39):  xrun +access+r +xmcoverage+all top_fsm.sv 
+s3(20Jun2023:09:38:44):  xrun +access+r +xmcoverage+all -covoverwrite top.sv 
+s4(20Jun2023:16:11:46):  xrun +access+r +xmcoverage+all -covoverwrite top.sv 
+s5(20Jun2023:16:11:57):  xrun +access+r +xmcoverage+all -covoverwrite top_fsm.sv 
+s6(20Jun2023:16:17:16):  xrun +access+r +xmcoverage+all -covoverwrite top_fsm.sv 

@@ -1,0 +1,12 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
++access+r
++xmcoverge+all
+-covoverwrite
+driver.sv
+ff_inter.sv
+ff.v
+test.sv
+top.sv

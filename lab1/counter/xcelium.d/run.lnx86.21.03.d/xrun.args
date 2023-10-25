@@ -1,0 +1,11 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
++access+r
++xmcoverage+all
+-covoverwrite
+counter.sv
+count_inter.sv
+test.sv
+top.sv

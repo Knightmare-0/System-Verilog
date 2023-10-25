@@ -1,0 +1,12 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
++acess+r
++xmcoverage+all
+-covoverwrite
+jk_inter.sv
+jk_latch.sv
+test.sv
+top.sv
+-sv

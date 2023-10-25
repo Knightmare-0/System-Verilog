@@ -1,0 +1,90 @@
+xrun: 21.03-s001: (c) Copyright 1995-2021 Cadence Design Systems, Inc.
+TOOL:	xrun	21.03-s001: Started on Jun 13, 2023 at 16:57:17 IST
+xrun
+	+access+r
+	+xmcoverge+all
+	-covoverwrite
+	driver.sv
+	ff_inter.sv
+	ff.v
+	test.sv
+	top.sv
+
+   User defined plus("+") options:
+	+xmcoverge+all
+
+file: driver.sv
+file: test.sv
+class inputs;
+           |
+xmvlog: *E,DUPIDN (driver.sv,1|11): identifier 'inputs' previously declared [12.5(IEEE)].
+class jk_sr_inputs extends inputs;
+                 |
+xmvlog: *E,DUPIDN (driver.sv,5|17): identifier 'jk_sr_inputs' previously declared [12.5(IEEE)].
+class d_inputs extends inputs;
+             |
+xmvlog: *E,DUPIDN (driver.sv,20|13): identifier 'd_inputs' previously declared [12.5(IEEE)].
+class t_inputs extends inputs;
+             |
+xmvlog: *E,DUPIDN (driver.sv,29|13): identifier 't_inputs' previously declared [12.5(IEEE)].
+class driver;
+           |
+xmvlog: *E,DUPIDN (driver.sv,38|11): identifier 'driver' previously declared [12.5(IEEE)].
+driver drv_inp;
+             |
+xmvlog: *E,ILLPDL (test.sv,5|13): Mixing of ansi & non-ansi style port declaration is not legal.
+	program worklib.test_ff:sv
+		errors: 1, warnings: 0
+file: top.sv
+class jk_sr_inputs extends inputs;
+                                |
+xmvlog: *E,SVNOTY (./driver.sv,5|32): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
+(`include file: ./driver.sv line 5, `include file: test.sv line 1, file: top.sv line 1)
+class d_inputs extends inputs;
+                            |
+xmvlog: *E,SVNOTY (./driver.sv,20|28): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
+(`include file: ./driver.sv line 20, `include file: test.sv line 1, file: top.sv line 1)
+class t_inputs extends inputs;
+                            |
+xmvlog: *E,SVNOTY (./driver.sv,29|28): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
+(`include file: ./driver.sv line 29, `include file: test.sv line 1, file: top.sv line 1)
+inputs in;
+     |
+xmvlog: *E,NOIPRT (./driver.sv,39|5): Unrecognized declaration 'inputs' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
+(`include file: ./driver.sv line 39, `include file: test.sv line 1, file: top.sv line 1)
+jk_sr_inputs jkt , srt ;
+           |
+xmvlog: *E,NOIPRT (./driver.sv,40|11): Unrecognized declaration 'jk_sr_inputs' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
+(`include file: ./driver.sv line 40, `include file: test.sv line 1, file: top.sv line 1)
+d_inputs dt;
+       |
+xmvlog: *E,NOIPRT (./driver.sv,41|7): Unrecognized declaration 'd_inputs' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
+(`include file: ./driver.sv line 41, `include file: test.sv line 1, file: top.sv line 1)
+t_inputs tt;
+       |
+xmvlog: *E,NOIPRT (./driver.sv,42|7): Unrecognized declaration 't_inputs' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
+(`include file: ./driver.sv line 42, `include file: test.sv line 1, file: top.sv line 1)
+driver drv_inp;
+             |
+xmvlog: *E,ILLPDL (test.sv,5|13): Mixing of ansi & non-ansi style port declaration is not legal.
+(`include file: test.sv line 5, file: top.sv line 1)
+	program worklib.test_ff:sv
+		errors: 1, warnings: 0
+module ff(input j,k,s,r,d,t,rst,clk,output reg qjk,qsr,qd,qt);
+        |
+xmvlog: *W,RECOME (ff.v,1|8): recompiling design unit worklib.ff:v.
+	First compiled from line 1 of ff.v.
+(`include file: ff.v line 1, file: top.sv line 2)
+xmvlog: *E,DUPUNI: Unit "worklib.ff:v" multiply defined in files "ff.v" and "top.sv".
+xmvlog: *E,MNPDEC: Module name (ff) previously declared. Use -ALLOWREDEFINITION option for duplicate module names.
+interface ff_intf(input bit clk);
+                |
+xmvlog: *W,RECOME (ff_inter.sv,1|16): recompiling design unit worklib.ff_intf:sv.
+	First compiled from line 1 of ff_inter.sv.
+(`include file: ff_inter.sv line 1, file: top.sv line 3)
+xmvlog: *E,DUPUNI: Unit "worklib.ff_intf:sv" multiply defined in files "ff_inter.sv" and "top.sv".
+xmvlog: *E,MNPDEC: Module name (ff_intf) previously declared. Use -ALLOWREDEFINITION option for duplicate module names.
+	Total errors/warnings found outside modules and primitives:
+		errors: 12, warnings: 0
+xrun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
+TOOL:	xrun	21.03-s001: Exiting on Jun 13, 2023 at 16:57:18 IST  (total: 00:00:01)

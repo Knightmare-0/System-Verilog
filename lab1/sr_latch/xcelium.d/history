@@ -1,0 +1,13 @@
+//
+// File created by:  xrun
+// Do not modify this file
+
+s1::(18Apr2023:16:44:03):( xrun +access+r +nccoverage+all sr_latch.sv SR_inter.sv test.sv top.sv )
+s2::(18Apr2023:17:33:06):( xrun +access+r +ncoverage+all sr_latch.sv SR_inter.sv test.sv top.sv )
+s3::(18Apr2023:17:41:03):( xrun +access+r +ncoverage+all sr_latch.sv SR_inter.sv test.sv top.sv )
+s4::(18Apr2023:17:48:05):( xrun +access+r +ncoverage+all sr_latch.sv SR_inter.sv test.sv top.sv )
+s5::(18Apr2023:17:49:24):( xrun +access+r +ncoverage+all srl.sv SR_inter.sv test.sv top.sv )
+s6::(15May2023:10:56:15):( xrun +access+r +nccoverage+all SR_inter.sv sr_latch.sv test.sv top.sv )
+s7::(15May2023:10:59:52):( xrun +access+r +nccoverage+all SR_inter.sv sr_latch.sv test.sv top.sv )
+s8::(15May2023:11:01:11):( xrun +access+r +xmcoverage+all SR_inter.sv sr_latch.sv test.sv top.sv )
+s9::(15May2023:11:07:02):( xrun +access+r +xmcoverage+all SR_inter.sv sr_latch.sv test.sv top.sv )

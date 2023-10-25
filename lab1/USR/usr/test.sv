@@ -1,0 +1,44 @@
+module test(usr_inter.p2 t1);
+initial
+begin
+t1.rst=0;
+t1.s1=1;t1.s0=1;
+t1.pin=4'b1010;
+#10;
+t1.rst=1;
+#10;
+t1.rst = 0;
+t1.pin=4'b0000;
+t1.s1=0;t1.s0=1;
+t1.sin=1;
+#10;
+t1.rst=0;
+t1.s1=0;t1.s0=1;
+t1.sin=1;
+#10;
+t1.rst=0;
+t1.s1=0;t1.s0=1;
+t1.sin=0;
+#10;
+t1.rst=0;
+t1.s1=0;t1.s0=1;
+t1.sin=1;
+#10;
+t1.rst=0;
+t1.s1=1;t1.s0=0;
+t1.sin=1;
+#10;
+t1.rst=0;
+t1.s1=1;t1.s0=0;
+t1.sin=0;
+#10;
+t1.rst=0;
+t1.s1=1;t1.s0=0;
+t1.sin=0;
+#10;
+t1.s1 = 1'bx;t1.s0=0;
+t1.sin=0;
+#10
+$finish;
+end 
+endmodule

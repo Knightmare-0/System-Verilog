@@ -1,0 +1,8 @@
+test.sv
+/home/pgstudent1/Wizznoob/lab1/multiple_ports/test.sv
+driver.sv
+/home/pgstudent1/Wizznoob/lab1/multiple_ports/driver.sv
+ff.v
+/home/pgstudent1/Wizznoob/lab1/multiple_ports/ff.v
+ff_inter.sv
+/home/pgstudent1/Wizznoob/lab1/multiple_ports/ff_inter.sv

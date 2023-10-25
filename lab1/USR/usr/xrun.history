@@ -1,0 +1,37 @@
+s1(16May2023:14:06:33):  xrun +acess++r +nccoverage+all usr.sv usr_inter.sv test.sv top.sv 
+s2(16May2023:14:09:22):  xrun +acess++r +nccoverage+all usr.sv usr_inter.sv test.sv top.sv 
+s3(16May2023:14:13:03):  xrun +acess++r +nccoverage+all usr.sv usr_inter.sv test.sv top.sv 
+s4(16May2023:14:15:06):  xrun +acess++r +nccoverage+all usr.sv usr_inter.sv test.sv top.sv 
+s5(16May2023:14:16:06):  xrun +acess++r +nccoverage+all usr.sv usr_inter.sv test.sv top.sv 
+s6(16May2023:14:16:25):  xrun +acess++r +xmcoverage+all usr.sv usr_inter.sv test.sv top.sv 
+s7(16May2023:14:18:03):  xrun +acess++r +xmcoverage+all usr.sv usr_inter.sv test.sv top.sv 
+s8(16May2023:14:19:35):  xrun +acess++r +xmcoverage+all usr.sv usr_inter.sv test.sv top.sv 
+s9(16May2023:14:21:46):  xrun +acess++r +xmcoverage+all usr.sv usr_inter.sv test.sv top.sv 
+s10(16May2023:14:57:06):  xrun +access+r +ncccoverage+all usr.sv usr_inter.sv test.sv top.sv 
+s11(16May2023:15:03:17):  xrun +access+r +ncccoverage+all usr.sv usr_inter.sv test.sv top.sv 
+s12(16May2023:15:09:07):  xrun +access+r +ncccoverage+all usr.sv usr_inter.sv test.sv top.sv 
+s13(16May2023:15:22:03):  irun -mess -access +rwc test.sv top.sv usr_inter.sv usr.sv -sv 
+s14(16May2023:15:24:24):  irun -mess -access +rwc test.sv top.sv usr_inter.sv usr.sv -sv 
+s15(16May2023:15:32:32):  irun -mess -access +rwc test.sv top.sv usr_inter.sv usr.sv -sv 
+s16(16May2023:15:37:52):  irun -mess -access +rwc test.sv top.sv usr_inter.sv usr.sv -sv 
+s17(16May2023:15:42:16):  irun -mess -access +rwc test.sv top.sv usr_inter.sv usr.sv -sv 
+s18(16May2023:15:43:38):  irun -mess -access +rwc test.sv top.sv usr_inter.sv usr.sv -sv 
+s19(16May2023:17:06:54):  xrun +acess+r +nccoverage+all test.sv top.sv usr_inter.sv usr.sv -sv 
+s20(16May2023:17:08:07):  xrun +acess+r +xmcoverage+all -covorewrite test.sv top.sv usr_inter.sv usr.sv -sv 
+s21(16May2023:17:08:18):  xrun +acess+r +xmcoverage+all -covorewrite test.sv top.sv usr_inter.sv usr.sv -sv 
+s22(16May2023:17:08:26):  xrun +acess+r +xmcoverage+all -covoerwrite test.sv top.sv usr_inter.sv usr.sv -sv 
+s23(16May2023:17:08:51):  xrun +acess+r +xmcoverage+all test.sv top.sv usr_inter.sv usr.sv -sv 
+s24(16May2023:17:09:19):  xrun +acess+r +xmcoverage+all covoverwrite test.sv top.sv usr_inter.sv usr.sv -sv 
+s25(16May2023:17:09:41):  xrun +acess+r +xmcoverage+all -covoverwrite test.sv top.sv usr_inter.sv usr.sv -sv 
+s26(16May2023:17:10:31):  xrun +acess+r +xmcoverage+all -covoverwrite test.sv top.sv usr_inter.sv usr.sv -sv 
+s27(16May2023:17:16:20):  xrun +acess+r +xmcoverage+all -covoverwrite test.sv top.sv usr_inter.sv usr.sv -sv 
+s28(16May2023:17:17:43):  xrun +acess+r +xmcoverage+all -covoverwrite set_expr_coverable_operators set_expr_coverable_statements test.sv top.sv usr_inter.sv usr.sv -sv 
+s29(16May2023:17:17:54):  xrun +acess+r +xmcoverage+all -covoverwrite -set_expr_coverable_operators -set_expr_coverable_statements test.sv top.sv usr_inter.sv usr.sv -sv 
+s30(16May2023:17:18:50):  xrun +acess+r +xmcoverage+all -covoverwrite test.sv top.sv usr_inter.sv usr.sv -sv 
+s31(16May2023:17:23:32):  xrun +acess+r +xmcoverage+all -covoverwrite test.sv top.sv usr_inter.sv usr.sv -sv 
+s32(16May2023:19:33:52):  xrun +acess+r +xmcoverage+all -covoverwrite test.sv top.sv usr_inter.sv usr.sv -sv 
+s33(16May2023:19:48:03):  xrun +acess+r +xmcoverage+all -covoverwrite test.sv top.sv usr_inter.sv usr.sv -sv 
+s34(16May2023:20:38:27):  xrun +acess+r +xmcoverage+all -covoverwrite test.sv top.sv usr_inter.sv usr.sv -sv 
+s35(16May2023:20:38:50):  xrun +acess+r +xmcoverage+all -covoverwrite test.sv top.sv usr_inter.sv usr.sv -sv 
+s36(16May2023:20:38:59):  xrun +acess+r +xmcoverage+all -covoverwrite test.sv top.sv usr_inter.sv usr.sv -sv 
+s37(16May2023:20:40:59):  xrun +acess+r +xmcoverage+all -covoverwrite test.sv top.sv usr_inter.sv usr.sv -sv 

@@ -1,0 +1,13 @@
+s1(16May2023:17:43:53):  xrun +acess+r +xmcoverage+all -covoverwrite counter.sv count_inter.sv test.sv top.sv -sv 
+s2(16May2023:17:45:00):  xrun +acess+r +xmcoverage+all -covoverwrite counter.sv count_inter.sv test.sv top.sv -sv 
+s3(05Jun2023:11:36:18):  xrun +access+r +xmcoverage+all -covoverwrite counter.sv count_inter.sv test.sv top.sv 
+s4(05Jun2023:11:40:50):  xrun +access+r +xmcoverage+all -covoverwrite counter.sv count_inter.sv test.sv top.sv 
+s5(10Jun2023:22:13:41):  xrun +access+r +nccoverage+all -covoverwrite counter.sv count_inter.sv test.sv top.sv 
+s6(12Jun2023:10:58:37):  xrun +access+r +xmcoverage+all -covoverwrite counter.sv count_inter.sv test.sv top.sv 
+s7(12Jun2023:10:59:29):  xrun +access+r +xmcoverage+all -covoverwrite counter.sv count_inter.sv test.sv top.sv 
+s8(12Jun2023:11:00:55):  xrun +access+r +xmcoverage+all -covoverwrite counter.sv count_inter.sv test.sv top.sv 
+s9(12Jun2023:11:02:18):  xrun +access+r +xmcoverage+all -covoverwrite counter.sv count_inter.sv test.sv top.sv 
+s10(12Jun2023:11:08:51):  xrun +access+r +xmcoverage+all -covoverwrite counter.sv count_inter.sv test.sv top.sv 
+s11(12Jun2023:11:09:50):  xrun +access+r +xmcoverage+all -covoverwrite counter.sv count_inter.sv test.sv top.sv 
+s12(12Jun2023:11:11:01):  xrun +access+r +xmcoverage+all -covoverwrite counter.sv count_inter.sv test.sv top.sv 
+s13(12Jun2023:11:12:46):  xrun +access+r +xmcoverage+all -covoverwrite counter.sv count_inter.sv test.sv top.sv 
