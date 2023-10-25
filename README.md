@@ -1,4 +1,4 @@
-# System-Verilog Verification for basic designs
+# System-Verilog Verification for Basic Designs
 ### Counter Testbench
 
 ```
