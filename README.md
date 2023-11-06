@@ -41,6 +41,13 @@ x 0 1 0 1 0
 others Y1 Y0
 ```
 
+### Simvision Output
+![image-005](https://github.com/Knightmare-0/System-Verilog/assets/112769624/38533f4e-2627-4eb2-a887-c0b6081e98d0)
+
+
+### Coverage Report
+![image-006](https://github.com/Knightmare-0/System-Verilog/assets/112769624/9b0f9bc2-9b85-4477-8487-ecdc51760517)
+
 
 
 
