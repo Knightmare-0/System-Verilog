@@ -20,13 +20,15 @@ module test(count_inter.p2 t1);
 endmodule
 ```
 ### Simulation Results
-![temp](https://github.com/Knightmare-0/System-Verilog/assets/112769624/f6ef736e-2e41-4328-a940-1fe60ff5fcec)
+![image-002](https://github.com/Knightmare-0/System-Verilog/assets/112769624/ee6e60c2-4eaa-493b-952d-8d8a7b1338b1)
 
 ### Simvision Output
-![temp](https://github.com/Knightmare-0/System-Verilog/assets/112769624/6728ae48-fc8d-42ec-91f5-4ecf65b3c9e6)
+![image-003](https://github.com/Knightmare-0/System-Verilog/assets/112769624/cee8135a-3e57-42cf-9b19-3cfb8c424c4c)
 
 ### Coverage Report
-![temp](https://github.com/Knightmare-0/System-Verilog/assets/112769624/4c2bae36-e748-4b4d-aa70-659e9f716471)
+![image-004](https://github.com/Knightmare-0/System-Verilog/assets/112769624/5b706b0f-4177-4948-81fa-1bb645be4bdd)
+
+
 
 
 
