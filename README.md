@@ -30,9 +30,9 @@ endmodule
 
 ### ARBITER WITH 4 BIT INPUT AND 2 BIT OUTPUT
 
-### DESIGN
 
 ```
+DESIGN
 A B C D Y1 Y0
 x x x 1 1 1
 x 1 x 0 0 1
