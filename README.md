@@ -28,6 +28,19 @@ endmodule
 ### Coverage Report
 ![image-004](https://github.com/Knightmare-0/System-Verilog/assets/112769624/5b706b0f-4177-4948-81fa-1bb645be4bdd)
 
+### ARBITER WITH 4 BIT INPUT AND 2 BIT OUTPUT
+
+### DESIGN
+
+```
+A B C D Y1 Y0
+x x x 1 1 1
+x 1 x 0 0 1
+x 0 1 0 1 0
+1 0 0 0 0 0
+others Y1 Y0
+```
+
 
 
 
