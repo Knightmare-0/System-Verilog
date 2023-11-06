@@ -41,6 +41,38 @@ x 0 1 0 1 0
 others Y1 Y0
 ```
 
+### Arbiter Testbench
+
+```
+//test.sv
+program test(arbiter_inter.tb t);
+  initial
+    begin
+      t.cb.a <= 4'bxxx1;
+      #50 t.cb.a <= 4'bx1x0;
+      #10 t.cb.a <= 4'bx010;
+      #10 t.cb.a <= 4'b1000;
+    end
+  initial
+    begin
+      #500
+      $finish;
+    end
+  initial
+    begin
+      t.rst=0;
+      #10 t.rst=1;
+      #10 t.rst=0;
+    end
+  initial
+    begin
+      #200;
+      t.cb.a <=4'b0000;
+      repeat(50) #5 t.cb.a <=t.cb.a + 4'b0001;
+  end
+endprogram
+```
+
 ### Simvision Output
 ![image-005](https://github.com/Knightmare-0/System-Verilog/assets/112769624/38533f4e-2627-4eb2-a887-c0b6081e98d0)
 
